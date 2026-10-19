@@ -29,6 +29,10 @@ CAN bus input/output module for Holley Terminator X (also HP/Dominator class ECU
 
 Output load current returns through pins 2 and 24. Sensor grounds are a separate quiet ground.
 
+## Web panel
+
+The module runs its own WiFi access point, `FLEXCAN-XXXX`. Each board makes a random password on first boot. Type `WIFI` on the USB serial console (115200) to see it. Then open http://192.168.4.1. The panel shows status and has controls for AUTO / ALL OFF, a 30 s output test, the Holley row for each output, and the WiFi password.
+
 ## Repository layout
 
 | Path | Contents |

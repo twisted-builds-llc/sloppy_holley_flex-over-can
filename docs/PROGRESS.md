@@ -15,8 +15,8 @@
 - [x] Outputs on/off via GPIO
 - [ ] PWM outputs (LEDC, per-output frequency) — blocked on Bench B
 - [x] ADS1115 driver + Input3-6 TX (dev board: breakout module) — built, not yet bench-run
-- [ ] NVS config (row map, mode, frequency, ECU serial)
-- [ ] WiFi web panel (status, config, heartbeat-guarded manual test)
+- [x] NVS config: Holley row per output, WiFi password (ECU serial is learned from the RPM frame; PWM mode/frequency wait for Bench B)
+- [x] WiFi web panel: status, AUTO/ALL OFF, 30 s heartbeat-guarded output test, TX start/stop, Bench A test volts, row + password settings — built, not yet run on hardware
 - [x] Native unit tests: ID build, BE float, flex math, GM CTS curve (`pio test -e native`, 5 pass)
 - [ ] **Bench A:** send fixed test values on Input3-6 candidate IDs; record what Holley EFI software shows
 - [ ] **Bench B:** capture `IO_OUTPUT` frames while Holley drives a PWM output at 0/25/50/75/100 %; record float + status
@@ -45,6 +45,7 @@ Wiring follows `firmware/src/pins.h`: CAN TX 4, RX 5, CAN Pal SLNT 21, flex 3 (4
 - **Bench C:** with an output ON, pull CANH/CANL. The output must drop within 0.5 s. Note how long Holley keeps showing the last flex value.
 
 ## Open questions
+- Flash use is 83% of the default 1.3 MB app slot (WiFi stack). If OTA updates aren't wanted, a single-app partition table doubles the room. Decide before adding OTA.
 - Output arming policy: Ver12 armed outputs only after all four rows had been OFF for 500 ms, and a CAN fault needed a manual re-ARM. The new firmware follows fresh Holley commands directly, so a fan or pump comes back on its own after a reset or CAN glitch. It keeps a 2 s boot guard and a serial DISARM latch. Confirm with partner.
 - Connector part number and per-pin current rating (sets the max current per output).
 - Identity of the "genuine device 1985" the bench work started from. Does Holley cap its input count?
@@ -53,3 +54,4 @@ Wiring follows `firmware/src/pins.h`: CAN TX 4, RX 5, CAN Pal SLNT 21, flex 3 (4
 ## Log
 - 2026-10-19 — Plan agreed. MCU ESP32-C3-MINI-1, 4 low-side outputs (pin 24 changed to a second power GND), ADS1115 for analog, WiFi panel + USB-C. Phase 0 done.
 - 2026-10-19 — Firmware scaffold: PlatformIO, pioarduino 55.03.311 pinned, no third-party libs. Flex/TX, RX/outputs, ADS1115, serial bench commands. `pio run` clean, native tests pass. Not yet run on hardware.
+- 2026-10-19 — Web panel (web.h) + NVS settings (settings.h). Per-board random WiFi password replaces the hardcoded Ver12 one. Build clean, page JS syntax-checked, not yet run on hardware.

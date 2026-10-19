@@ -61,6 +61,15 @@ static_assert(freshOutput(true,true,500,0,500) && !freshOutput(true,true,501,0,5
 static_assert(!freshOutput(false,true,1,0,500) && !freshOutput(true,false,1,0,500), "Missing/invalid must fail");
 static_assert(freshOutput(true,true,100,0xFFFFFFF0,500), "Timestamp wrap must work");
 
+// ---- Manual output test (from CANFLEXPDU Ver12 TestPolicy.h) ----
+constexpr uint32_t TEST_MAX_MS=30000, HEARTBEAT_MS=3000;
+constexpr bool testExpired(uint32_t now,uint32_t since,uint32_t heartbeat,uint32_t maximum){
+  return uint32_t(now-since)>=maximum || uint32_t(now-heartbeat)>=HEARTBEAT_MS;
+}
+static_assert(!testExpired(29999,0,29999,30000) && testExpired(30000,0,30000,30000), "Hard limit even with fresh heartbeat");
+static_assert(testExpired(3000,0,0,30000), "Heartbeat expires at 3s");
+static_assert(!testExpired(100,0xFFFFFF00,0xFFFFFFF0,30000), "Timers tolerate millis wrap");
+
 // ---- Flex sensor (from CAN_Flex_Slim_Ver5; provisional Continental-style conversion) ----
 constexpr float FLEX_MIN_HZ=49.5f, FLEX_MAX_HZ=150.5f; // Endpoint jitter allowance around 50..150 Hz.
 inline bool flexFrequencyOk(float hz){return hz>=FLEX_MIN_HZ && hz<=FLEX_MAX_HZ;}
