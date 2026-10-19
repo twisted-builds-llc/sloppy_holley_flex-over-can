@@ -3,7 +3,7 @@
 	(generator "konnect")
 	(generator_version "10.0")
 	(uuid "ce100114-3708-4959-bcbf-14437a5fae7e")
-	(paper "A4")
+	(paper "USLetter")
 	(lib_symbols)
 	(no_connect
 		(at 101.6 38.1)

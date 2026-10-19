@@ -3,11 +3,20 @@
 KiCad 10 project: `Sloppy_Holley_Flex-over-can/Flex-over-can/`. Fab and assembly: JLCPCB.
 
 ## Sheets
-| Sheet | File | Contents |
-|-------|------|----------|
-| Root | `Flex-over-can.kicad_sch` | MCU, 3V3 LDO, sensor 5V, CAN, USB-C, flex, analog, outputs |
-| Power | `Power.kicad_sch` | Placeholder for the user's own input protection + 5V circuit. In: `VBAT_IN`, `GND`. Out: `VBAT` (protected 12V, ~250 mA budget), `+5V` (size for 0.5 A). PWR_FLAGs on the outputs until the circuit is drawn. |
-| Connector | `Connector.kicad_sch` | One stub per harness pin (1-24) ending in a no-connect flag. Place the chosen connector, delete each X, wire the pin to the stub. |
+All sheets are US Letter. Nets that cross sheets use global labels; nets local to one sheet use local labels.
+
+| Page | Sheet | File | Contents |
+|-----:|-------|------|----------|
+| 1 | Root | `Flex-over-can.kicad_sch` | Top level: sheet blocks, page index. Global labels tie the Power and Connector sheet pins to the other sheets. |
+| 2 | Power | `Power.kicad_sch` | Placeholder for the user's own input protection + 5V circuit. In: `VBAT_IN`, `GND`. Out: `VBAT` (protected 12V, ~250 mA budget), `+5V` (size for 0.5 A). PWR_FLAGs on the outputs until the circuit is drawn. |
+| 3 | Connector | `Connector.kicad_sch` | One stub per harness pin (1-24) ending in a no-connect flag. Place the chosen connector, delete each X, wire the pin to the stub. |
+| 4 | 3V3 and Sensor 5V | `Supplies.kicad_sch` | U11 3V3 LDO, U3 sensor 5V, D4 USB VBUS OR-ing, GND PWR_FLAG |
+| 5 | MCU ESP32-C3 | `MCU.kicad_sch` | U1, EN RC, BOOT button, status LED, I2C pull-ups |
+| 6 | USB-C | `USB.kicad_sch` | J2, CC resistors, U9 ESD |
+| 7 | CAN Bus | `CAN.kicad_sch` | U8 transceiver, JP1/R11 termination, D6 ESD |
+| 8 | Flex Sensor Input | `Flex.kicad_sch` | F2 PTC, pull-up, series R, clamp |
+| 9 | Analog Inputs | `Analog.kicad_sch` | 4x divider/RC/clamp, U10 ADS1115, NT1 star ground |
+| 10 | Low-Side Outputs | `Outputs.kicad_sch` | U4-U7 BTS3256D with series, pulldown and SRP resistors |
 
 Until both placeholders are filled, ERC reports 5 `label_dangling` errors on `VBAT_IN` and the Power sheet `GND`. They clear once a connector pin and the power circuit are on those nets.
 

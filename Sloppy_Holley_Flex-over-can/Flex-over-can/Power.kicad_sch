@@ -3,7 +3,7 @@
 	(generator "konnect")
 	(generator_version "10.0")
 	(uuid "4de31dd5-cce6-4f58-9b99-9d7f2f19c90e")
-	(paper "A4")
+	(paper "USLetter")
 	(lib_symbols
 		(symbol "power:PWR_FLAG"
 			(power global)
