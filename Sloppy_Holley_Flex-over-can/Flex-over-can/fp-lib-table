@@ -1,4 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "Kicad-specific-libraries") (type "KiCad") (uri "C:/Users/fordtech63/Documents/Dales lunchbreak projects/Sloppy_Holley_Flex-over-can/Kicad-specific-libraries") (options "") (descr ""))
+	(lib (name "Kicad-specific-libraries") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries") (options "") (descr ""))
 )
