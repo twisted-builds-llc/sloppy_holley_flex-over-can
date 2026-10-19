@@ -1,0 +1,300 @@
+(kicad_sch
+	(version 20250610)
+	(generator "konnect")
+	(generator_version "10.0")
+	(uuid "4de31dd5-cce6-4f58-9b99-9d7f2f19c90e")
+	(paper "A4")
+	(lib_symbols
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(hierarchical_label "VBAT_IN"
+		(shape input)
+		(at 50.8 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a5a8f6a5-512e-4249-a480-fbdf09230501")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 50.8 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3b1d1799-f0eb-499c-a1e2-cc403275e158")
+	)
+	(hierarchical_label "VBAT"
+		(shape output)
+		(at 220.98 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f7d7c87f-af29-495f-a3b1-4120073b649b")
+	)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 220.98 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3366a09c-0032-41dc-bd96-3ffd4017f230")
+	)
+  (text "POWER SUPPLY - placeholder for your input protection + 5V circuit.\nIN:  VBAT_IN = raw +12V from connector pin 1.   GND = power ground (pins 2 + 24).\nOUT: VBAT = protected +12V. Feeds sensor 5V reg U3 (150 mA max), flex PTC F2, BTS3256D VS pins.\n       Budget ~250 mA. Output load current does not flow through VBAT.\nOUT: +5V = board 5V. ME6211 3V3 LDO (ESP32 WiFi peaks ~350 mA) + TJA1051 (~70 mA). Size for 0.5 A.\nUSB VBUS is diode-ORed into +5V on the main sheet (D4), so the 5V output must tolerate back-feed.\nDelete #FLG01/#FLG02 if your regulator output pin is power_out type (ERC flags two drivers)."
+    (at 38.1 45.72 0)
+    (effects (font (size 1.524 1.524)) (justify left bottom))
+    (uuid "cc4e7364-0224-447d-aaa8-85782caea4b1")
+  )
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 220.98 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30e48d0b-424d-4c4b-9b2c-8dbb828f45fa")
+		(property "Reference" "#FLG01"
+			(at 220.98 74.295 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 220.98 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 220.98 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Flex-over-can"
+				(path "/52da8c00-1bcc-40cd-af67-a38808218a29/a0c516e1-c011-4b6e-a82e-48eb07b9770c"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 220.98 101.6 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e36d27de-5d4c-4592-8587-ee9689a7ceb1")
+		(property "Reference" "#FLG02"
+			(at 220.98 99.695 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 220.98 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 220.98 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Flex-over-can"
+				(path "/52da8c00-1bcc-40cd-af67-a38808218a29/a0c516e1-c011-4b6e-a82e-48eb07b9770c"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

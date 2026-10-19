@@ -2,12 +2,22 @@
 
 KiCad 10 project: `Sloppy_Holley_Flex-over-can/Flex-over-can/`. Fab and assembly: JLCPCB.
 
+## Sheets
+| Sheet | File | Contents |
+|-------|------|----------|
+| Root | `Flex-over-can.kicad_sch` | MCU, 3V3 LDO, sensor 5V, CAN, USB-C, flex, analog, outputs |
+| Power | `Power.kicad_sch` | Placeholder for the user's own input protection + 5V circuit. In: `VBAT_IN`, `GND`. Out: `VBAT` (protected 12V, ~250 mA budget), `+5V` (size for 0.5 A). PWR_FLAGs on the outputs until the circuit is drawn. |
+| Connector | `Connector.kicad_sch` | One stub per harness pin (1-24) ending in a no-connect flag. Place the chosen connector, delete each X, wire the pin to the stub. |
+
+Until both placeholders are filled, ERC reports 5 `label_dangling` errors on `VBAT_IN` and the Power sheet `GND`. They clear once a connector pin and the power circuit are on those nets.
+
 ## Block diagram
 
 ```
-+12V (pin1) -> fuse -> reverse-polarity P-FET -> TVS -> buck 5V -> LDO 3.3V -> ESP32-C3-MINI-1, ADS1115, CAN xcvr
-                                                    \-> protected sensor 5V -> pins 12/15/18/21
-                                                    \-> polyfuse -> flex +12V (pin 5)
++12V (pin1) VBAT_IN -> [Power sheet: user's protection + 5V circuit] -> VBAT (protected 12V) + +5V
++5V -> LDO 3.3V -> ESP32-C3-MINI-1, ADS1115, CAN xcvr
+VBAT -> protected sensor 5V -> pins 12/15/18/21
+     -> polyfuse -> flex +12V (pin 5)
 USB-C VBUS -> diode-OR into 5V (bench flashing without 12V)
 
 Flex sig (pin6) -> pull-up 3.3V, series R, clamp, Schmitt -> GPIO3
@@ -37,19 +47,29 @@ GPIO0/1/7/10 -> low-side switches -> pins 8-11; flyback to +12V; return via pins
 
 The dev-board bench build (SuperMini) uses the same numbers where its pins allow. See `firmware/src/pins.h`.
 
-## Part choices (to finalize in Phase 2, with LCSC numbers)
+## Part choices (schematic V001, LCSC numbers are in each symbol's `LCSC` field)
 
-| Block | Candidate | LCSC | Notes |
-|-------|-----------|------|-------|
-| MCU | ESP32-C3-MINI-1 (4 MB) | TBD | antenna keep-out at board edge |
-| ADC | ADS1115IDGSR | TBD | 3.3 V supply, PGA ±4.096 V |
-| CAN xcvr | TJA1051T/3 or SN65HVD230 | TBD | 3.3 V I/O, silent pin |
-| Output switch | protected low-side (HITFET/OmniFET class) or logic-level NMOS + TVS | TBD | ≥5 A cont., PWM-capable, 3.3 V input |
-| Buck 12→5 V | TBD | TBD | ≥40 V input for load dump with TVS |
-| LDO 3.3 V | TBD | TBD | ≥500 mA (WiFi peaks) |
-| Sensor 5 V | protected LDO or current-limit switch | TBD | short to ground must not reset the MCU |
-| USB ESD | USBLC6-2SC6 | TBD | |
-| Connector | 24-pin, user choice | TBD | per-pin current rating sets output limit |
+| Ref | Part | LCSC | Notes |
+|-----|------|------|-------|
+| U1 | ESP32-C3-MINI-1-N4 | C2838502 | Espressif KiCad lib 3.2.1 vendored in `Kicad-specific-libraries/` |
+| U11 | ME6211C33M5G-N LDO 3.3 V 0.5 A | C82942 | AP2112K symbol (same pinout) |
+| U3 | TPS7B6950QDCYRQ1 sensor 5 V, 150 mA | C108469 | 40 V in, current limit + thermal shutdown |
+| U4-U7 | BTS3256D HITFET low-side | C3232337 | 7.5 A nom, 10 mΩ, 3.3 V input, 12 kHz max PWM, 40 V active clamp, fault readback on IN |
+| U8 | TJA1051T/3 CAN | C38695 | VIO 3.3 V, S pin pulled high (silent) |
+| U10 | ADS1115IDGSR | C37593 | 0x48, 3.3 V |
+| U9 | USBLC6-2SC6 | C7519 | USB ESD |
+| D6 | NUP2105L CAN ESD | C284104 | |
+| F2 | 0.2 A PTC | C69680 | flex sensor 12 V |
+| J2 | USB-C HRO TYPE-C-31-M-12 | C165948 | |
+| R38-R41 | 15k SRP (slew) | C22809 | DNP: open = fastest slew for PWM |
+
+Passives are JLC Basic 0603 parts unless noted. Analog divider 12k/20k gives ×0.625, so firmware `ANALOG_SCALE` = 1.6 on this board.
+
+## Design notes / open items
+- Output inductive kickback is absorbed by the BTS3256D active clamp (40 V). That is fine for relays and low-frequency solenoids. High-frequency PWM of large inductive loads should get a flyback diode at the load. A diode on the board would short the battery through the HITFET body diode if the battery is connected backwards.
+- Input protection and the 5V regulator are the user's own design on the Power sheet. VBAT must be reverse-polarity protected: it feeds the BTS3256D VS pins, U3 and F2. The earlier draft used F1 0.5 A PTC (C70077) -> SMBJ26CA TVS (C19077581) -> SS56 reverse diode (C18199169) -> LMR16006 buck (C87080, 22 µH, FB 56k/10k).
+- Sensor 5 V shorted to 12 V can damage U3 (OUT abs max). Consider adding a TVS/series protection if the harness risk is real.
+- ESP32 footprint's 3D model path uses `${KICAD8_3RD_PARTY}`; repoint to `3dmodels/ESP32-C3-MINI-1.STEP` during layout.
 
 ## Bring-up checklist
 _Fill in during Phase 4._

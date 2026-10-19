@@ -1,4 +1,6 @@
 (sym_lib_table
 	(version 7)
 	(lib (name "ESP32-C3-SuperMini") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/ESP32-C3-SuperMini.kicad_sym") (options "") (descr ""))
-)
+
+  (lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/Espressif.kicad_sym") (options "") (descr ""))
+  (lib (name "FlexCAN") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/FlexCAN.kicad_sym") (options "") (descr "")))

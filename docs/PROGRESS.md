@@ -23,10 +23,14 @@
 - [ ] **Bench C:** unplug CAN with an output ON; confirm the module drops it within 500 ms and note how long Holley holds the last input value
 
 ### Phase 2 — Schematic
-- [ ] Replace SuperMini symbol with ESP32-C3-MINI-1
-- [ ] Power input, sensor 5 V, CAN, flex, analog, outputs, USB-C
-- [ ] JLC/LCSC part selection (record LCSC numbers in HARDWARE.md)
-- [ ] ERC clean
+- [x] Replace SuperMini symbol with ESP32-C3-MINI-1
+- [x] Power input, sensor 5 V, CAN, flex, analog, outputs, USB-C (flat A2 sheet, net labels)
+- [x] JLC/LCSC part selection (LCSC field on every part except J1; table in HARDWARE.md)
+- [x] ERC clean (0 errors, 0 warnings), no unconnected pins, no overlaps
+- [x] Split into hierarchy: Power sheet (placeholder for user's own protection + 5V circuit) and Connector sheet (24 NC-flagged stubs)
+- [ ] Draw power circuit on Power sheet
+- [ ] Place harness connector on Connector sheet (delete NC flags, wire pins)
+- [ ] Peer review of schematic with partner
 
 ### Phase 3 — PCB
 - [ ] Connector part chosen and footprint verified
@@ -55,3 +59,5 @@ Wiring follows `firmware/src/pins.h`: CAN TX 4, RX 5, CAN Pal SLNT 21, flex 3 (4
 - 2026-10-19 — Plan agreed. MCU ESP32-C3-MINI-1, 4 low-side outputs (pin 24 changed to a second power GND), ADS1115 for analog, WiFi panel + USB-C. Phase 0 done.
 - 2026-10-19 — Firmware scaffold: PlatformIO, pioarduino 55.03.311 pinned, no third-party libs. Flex/TX, RX/outputs, ADS1115, serial bench commands. `pio run` clean, native tests pass. Not yet run on hardware.
 - 2026-10-19 — Web panel (web.h) + NVS settings (settings.h). Per-board random WiFi password replaces the hardcoded Ver12 one. Build clean, page JS syntax-checked, not yet run on hardware.
+- 2026-10-19 — Schematic V001: ESP32-C3-MINI-1, LMR16006 buck, ME6211, TPS7B69 sensor 5 V, 4× BTS3256D, TJA1051T/3, ADS1115, USB-C. ERC clean. J1 footprint pending.
+- 2026-10-19 — Schematic split into Root + Power + Connector sheets. Removed F1/D1/D2/LMR16006 buck and J1; Power sheet exposes VBAT_IN/GND in and VBAT/+5V out. ERC: 5 expected label_dangling errors until the placeholders are filled.
