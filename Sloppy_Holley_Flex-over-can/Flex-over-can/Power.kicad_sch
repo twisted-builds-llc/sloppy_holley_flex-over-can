@@ -1657,6 +1657,11 @@
 		)
 		(uuid "f7d7c87f-af29-495f-a3b1-4120073b649b")
 	)
+  (text "PCB PLACEMENT NOTES:\n- RV1, C1, C2: right at J1 pin A1, before D1. Short, wide trace to GND.\n- C3 (0.1uF) next to U2 OUT pin; C4 (47uF) and D2 near U2 OUT.\n- U2 IN: keep D1 close to U2 IN pin.\n- U2 tab: large copper pour + thermal vias to bottom GND (~2W)."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "ca94224e-8ecd-43cc-9916-496dbfa3edd5")
+  )
 	(symbol
 		(lib_id "Regulator_Linear:L7805")
 		(at 139.7 95.25 0)

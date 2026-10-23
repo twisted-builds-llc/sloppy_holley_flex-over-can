@@ -1168,6 +1168,11 @@
 			)
 		)
 	)
+  (text "PCB PLACEMENT NOTES:\n- C14 (1nF) and D7 right at U1 GPIO pin (FLEX_SIG), not at the connector.\n- F2 near J1 pin A4."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "6445a17b-9e96-490e-85d1-8c1a25673cfa")
+  )
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 63.5 76.2 0)

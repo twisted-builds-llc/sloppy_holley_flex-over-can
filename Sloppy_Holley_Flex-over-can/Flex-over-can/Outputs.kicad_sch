@@ -1978,6 +1978,11 @@
 			)
 		)
 	)
+  (text "PCB PLACEMENT NOTES:\n- C30 at U4, C31 at U5, C32 at U6, C33 at U7 VBAT pin 1 (100nF each).\n- Wide copper on OUT tabs and the GND return to J1 A7/B1 (relay current)."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "9ec42f66-2141-485a-bc51-6c4d117c909b")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 55.88 96.52 0)

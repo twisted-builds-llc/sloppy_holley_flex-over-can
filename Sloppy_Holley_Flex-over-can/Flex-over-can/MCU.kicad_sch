@@ -2886,6 +2886,11 @@
 			)
 		)
 	)
+  (text "PCB PLACEMENT NOTES:\n- C10 (100nF) at U1 pin 3 (3V3), smallest loop to GND pad.\n- C9 (10uF) next to C10, same 3V3 pin.\n- C11 (1uF) at U1 pin 8 (EN).\n- Keep-out: no copper or parts under/near U1 antenna end."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "2e214657-e5d6-4e91-924e-cc0a5fe0f3ad")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 170.18 111.76 0)

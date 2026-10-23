@@ -2403,6 +2403,11 @@
 			)
 		)
 	)
+  (text "PCB PLACEMENT NOTES:\n- C24 (100nF) at U10 pin 8 (VDD).\n- C20-C23 filter caps at U10 AIN pins, GND side to GND near U10.\n- NT1 near U10: single GND_SENS to GND join point."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "baf410fa-d104-4c06-8f5f-ee459edf0029")
+  )
 	(symbol
 		(lib_id "Device:C")
 		(at 88.9 160.02 0)

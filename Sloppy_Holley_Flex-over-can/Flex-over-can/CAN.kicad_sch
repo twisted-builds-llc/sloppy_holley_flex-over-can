@@ -1667,6 +1667,11 @@
 			)
 		)
 	)
+  (text "PCB PLACEMENT NOTES:\n- C12 (100nF) at U8 pin 3 (VCC 5V); C13 (100nF) at U8 pin 5 (VIO 3V3).\n- D6, R11, JP1 close to J1 CANH/CANL pins.\n- Route CANH/CANL as a tight pair."
+    (at 15.24 180.34 0)
+    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
+    (uuid "1b46b727-61a0-4e37-90fd-c917ce340c3e")
+  )
 	(symbol
 		(lib_id "Device:C")
 		(at 160.02 63.5 0)
