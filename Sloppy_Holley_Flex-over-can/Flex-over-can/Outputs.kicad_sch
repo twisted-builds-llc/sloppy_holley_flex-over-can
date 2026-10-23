@@ -486,18 +486,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "OUTPUTS (x4): BTS3256D HITFET low-side, 7.5A nom, 12kHz max PWM, internal 40V active clamp.\n3.3k series (fault readback), 100k pulldown holds OFF in reset. SRP open = fast slew; fit R38-41 to slow edges.\nLoad current returns via J1 pins 2+24."
-		(exclude_from_sim no)
-		(at 25.4 30.48 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "62a07624-2477-4de2-991f-a5a631d182e4")
-	)
 	(wire
 		(pts
 			(xy 54.61 139.7) (xy 71.12 139.7)
@@ -1982,6 +1970,11 @@
     (at 15.24 180.34 0)
     (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
     (uuid "9ec42f66-2141-485a-bc51-6c4d117c909b")
+  )
+  (text "OUTPUTS (x4): BTS3256D HITFET low-side, 7.5A nom, 12kHz max PWM, internal 40V active clamp.\n3.3k series (fault readback), 100k pulldown holds OFF in reset. SRP open = fast slew; fit R38-41 to slow edges.\nLoad current returns via J1 pins A7 + B1 (GND)."
+    (at 25.4 30.48 0)
+    (effects (font (size 2 2) (bold yes)) (justify left bottom))
+    (uuid "e2a96c22-82ed-4a7f-9bd3-e37ba53a447f")
   )
 	(symbol
 		(lib_id "Device:R")
