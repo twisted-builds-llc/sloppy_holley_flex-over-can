@@ -285,8 +285,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -418,13 +418,49 @@
         "uuid": "52da8c00-1bcc-40cd-af67-a38808218a29"
       }
     ],
-    "used_designators": "U1-2",
+    "used_designators": "U1-2,J1,D1-2,#PWR7,C1-4,RV1",
     "variants": []
   },
   "sheets": [
     [
       "52da8c00-1bcc-40cd-af67-a38808218a29",
       "Root"
+    ],
+    [
+      "a0c516e1-c011-4b6e-a82e-48eb07b9770c",
+      "Power"
+    ],
+    [
+      "4d2e4f8d-9a81-446a-899d-e1e629794d31",
+      "Connector"
+    ],
+    [
+      "569c65bb-983c-44bb-a074-b0d194a80a78",
+      "3V3 and Sensor 5V"
+    ],
+    [
+      "fda39084-1e7c-4513-9a0f-48f946786993",
+      "MCU ESP32-C3"
+    ],
+    [
+      "9f2b7071-401e-4f00-b35d-7482c7d405ec",
+      "USB-C"
+    ],
+    [
+      "fc029ae0-e43b-4993-a5e5-66b0c2468c88",
+      "CAN Bus"
+    ],
+    [
+      "9b82dd58-b254-43d9-bea1-a5a8511d2977",
+      "Flex Sensor Input"
+    ],
+    [
+      "62c9dd6f-489d-459c-8ee1-2cbea9b7e53f",
+      "Analog Inputs"
+    ],
+    [
+      "16b92181-d8c4-48d4-b0c3-a76b149fd6be",
+      "Low-Side Outputs"
     ]
   ],
   "text_variables": {},
