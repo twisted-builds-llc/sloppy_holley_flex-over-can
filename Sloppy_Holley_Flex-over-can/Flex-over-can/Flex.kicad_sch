@@ -1189,7 +1189,7 @@
 				)
 			)
 		)
-		(property "Value" "0.2A 30V"
+		(property "Value" "PTC 0.2A 60V"
 			(at 66.04 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1199,7 +1199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+		(property "Footprint" "KiCad_Footprints:Fuse_1812_4532Metric"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1210,7 +1210,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C269125.html"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1221,7 +1221,7 @@
 				)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+		(property "Description" "PTC resettable fuse, 0.2A hold / 0.4A trip, 60V, 1812 (Brightking SMD1812B020TF-J)"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1232,7 +1232,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C69680"
+		(property "LCSC" "C269125"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1257,7 +1257,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "SMD1812B020TF-J"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "URL" "https://jlcpcb.com/partdetail/SMD1812B020TF-J/C269125"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 127 114.3 90)

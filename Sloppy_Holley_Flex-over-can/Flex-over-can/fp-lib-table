@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "Kicad-specific-libraries") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries") (options "") (descr ""))
 
-  (lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/Espressif.pretty") (options "") (descr "")))
+  (lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/Espressif.pretty") (options "") (descr ""))
+  (lib (name "KiCad_Footprints") (type "KiCad") (uri "${KIPRJMOD}/../Kicad-specific-libraries/KiCad_Footprints.pretty") (options "") (descr "")))

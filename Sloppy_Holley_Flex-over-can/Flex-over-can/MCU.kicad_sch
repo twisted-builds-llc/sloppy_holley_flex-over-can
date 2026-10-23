@@ -3190,7 +3190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "KiCad_Footprints:SW_Push_1P1T_XKB_TS-1187A"
 			(at 185.42 111.76 0)
 			(hide yes)
 			(show_name no)

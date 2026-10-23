@@ -1966,7 +1966,7 @@
 				)
 			)
 		)
-		(property "Value" "B130-13-F"
+		(property "Value" "B160-13-F"
 			(at 122.2375 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2172,7 +2172,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Varistor"
+		(property "Value" "SMDJ24CA"
 			(at 90.17 100.6466 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2540,83 +2540,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 179.07 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e36d27de-5d4c-4592-8587-ee9689a7ceb1")
-		(property "Reference" "#FLG02"
-			(at 179.07 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 179.07 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 179.07 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f16f39a-437f-4498-9759-fa83a8dff2d9")
-		)
-		(instances
-			(project "Flex-over-can"
-				(path "/52da8c00-1bcc-40cd-af67-a38808218a29/a0c516e1-c011-4b6e-a82e-48eb07b9770c"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_US")
 		(at 101.6 99.06 0)
 		(unit 1)
@@ -2638,7 +2561,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 50V"
 			(at 104.14 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2649,7 +2572,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 101.6 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2660,7 +2583,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706853607202816-C15850.pdf?response-content-disposition=attachment%3B%20filename%3DC15850.pdf%3B%20filename%2A%3DUTF-8%27%27C15850.pdf&x-oss-date=20260803T143614Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rcfN6DvJ1s2oCsa0X8plkdZ91ihqLbrzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qahm%2FiBV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsrh0tJ%2BqnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIL%2BFZaaKWD5sagAEY3V6XImRZrsQvHxGZeZbTfAlYmd%2F2lZVI7KFQcbCQXD6WVCvO2YEP4O64CSdK%2BUUJsJSl0ZMXoUfKaVNdGo40qbG2Vsnpbq723fXKLcS9ZJeDl41kfZm4j5WmWb0hPP4MZ5ilBH3hHu5Tw9lstMNihXzh0JAttQMrqcd4cPXPoCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYi7d7QBMmBGicMBYHkRNigpM%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3401558b099106ef6c68a61550fb44e689a3ba3fcd235294cf085a6f46719b79"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C13585.html"
 			(at 101.6 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2671,7 +2594,7 @@
 				)
 			)
 		)
-		(property "Description" "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "10uF 50V X5R ±10% 1206 MLCC (Samsung CL31A106KBHNNNE)"
 			(at 101.6 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2682,7 +2605,7 @@
 				)
 			)
 		)
-		(property "URL" "https://jlcpcb.com/partdetail/16532-CL21A106KAYNNNE/C15850"
+		(property "URL" "https://jlcpcb.com/partdetail/14236-CL31A106KBHNNNE/C13585"
 			(at 101.6 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2693,7 +2616,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15850"
+		(property "LCSC" "C13585"
 			(at 101.6 99.06 0)
 			(hide yes)
 			(show_name no)
