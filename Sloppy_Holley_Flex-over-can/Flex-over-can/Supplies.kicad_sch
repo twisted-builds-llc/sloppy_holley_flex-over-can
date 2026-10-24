@@ -785,6 +785,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCB PLACEMENT NOTES:\n- C5 (1uF) at U3 IN pin; C6 (2.2uF) at U3 OUT pin.\n- C7 (1uF) at U11 VIN pin; C8 (10uF) at U11 VOUT pin.\n- Keep each cap within ~2mm of its pin, GND side straight to a via."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bb2c327-2c18-47cd-a1f1-2692e4281d53")
+	)
 	(text "SUPPLIES: ME6211 LDO +5V -> +3V3 (MCU, ADC, CAN logic). USB VBUS diode-ORed into +5V via D4 for bench flashing.\nU3 TPS7B6950: short-proof sensor 5V (+5V_SENS, 150mA, 40V in) from protected VBAT. VBAT and +5V come from the Power page."
 		(exclude_from_sim no)
 		(at 25.4 30.48 0)
@@ -1405,11 +1417,6 @@
 			)
 		)
 	)
-  (text "PCB PLACEMENT NOTES:\n- C5 (1uF) at U3 IN pin; C6 (2.2uF) at U3 OUT pin.\n- C7 (1uF) at U11 VIN pin; C8 (10uF) at U11 VOUT pin.\n- Keep each cap within ~2mm of its pin, GND side straight to a via."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "6bb2c327-2c18-47cd-a1f1-2692e4281d53")
-  )
 	(symbol
 		(lib_id "FlexCAN:TPS7B6950QDCY")
 		(at 88.9 127 0)

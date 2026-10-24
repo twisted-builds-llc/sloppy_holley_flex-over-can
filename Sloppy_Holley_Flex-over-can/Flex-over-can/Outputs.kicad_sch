@@ -486,6 +486,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCB PLACEMENT NOTES:\n- C30 at U4, C31 at U5, C32 at U6, C33 at U7 VBAT pin 1 (100nF each).\n- Wide copper on OUT tabs and the GND return to J1 A7/B1 (relay current)."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ec42f66-2141-485a-bc51-6c4d117c909b")
+	)
+	(text "OUTPUTS (x4): BTS3256D HITFET low-side, 7.5A nom, 12kHz max PWM, internal 40V active clamp.\n3.3k series (fault readback), 100k pulldown holds OFF in reset. SRP open = fast slew; fit R38-41 to slow edges.\nLoad current returns via J1 pins A7 + B1 (GND)."
+		(exclude_from_sim no)
+		(at 25.4 30.48 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2a96c22-82ed-4a7f-9bd3-e37ba53a447f")
+	)
 	(wire
 		(pts
 			(xy 54.61 139.7) (xy 71.12 139.7)
@@ -1966,16 +1990,6 @@
 			)
 		)
 	)
-  (text "PCB PLACEMENT NOTES:\n- C30 at U4, C31 at U5, C32 at U6, C33 at U7 VBAT pin 1 (100nF each).\n- Wide copper on OUT tabs and the GND return to J1 A7/B1 (relay current)."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "9ec42f66-2141-485a-bc51-6c4d117c909b")
-  )
-  (text "OUTPUTS (x4): BTS3256D HITFET low-side, 7.5A nom, 12kHz max PWM, internal 40V active clamp.\n3.3k series (fault readback), 100k pulldown holds OFF in reset. SRP open = fast slew; fit R38-41 to slow edges.\nLoad current returns via J1 pins A7 + B1 (GND)."
-    (at 25.4 30.48 0)
-    (effects (font (size 2 2) (bold yes)) (justify left bottom))
-    (uuid "e2a96c22-82ed-4a7f-9bd3-e37ba53a447f")
-  )
 	(symbol
 		(lib_id "Device:R")
 		(at 55.88 96.52 0)
@@ -1985,7 +1999,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "044ca041-e845-479f-bb08-fc4853126aa0")
 		(property "Reference" "R38"
 			(at 57.912 96.52 90)
@@ -3006,7 +3020,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a6ae5e6c-6aa8-4e37-8106-9d0dc6e91801")
 		(property "Reference" "R40"
 			(at 57.912 157.48 90)
@@ -3593,7 +3607,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "db759943-69bc-4e07-890e-79e344619fa7")
 		(property "Reference" "R39"
 			(at 179.832 96.52 90)
@@ -3784,7 +3798,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fd6be6aa-3ca9-497b-b172-2af27388b496")
 		(property "Reference" "R41"
 			(at 179.832 157.48 90)

@@ -816,6 +816,18 @@
 		)
 		(uuid "02a75746-a15d-4e10-bc7a-dcee286a9eca")
 	)
+	(text "PCB PLACEMENT NOTES:\n- C14 (1nF) and D7 right at U1 GPIO pin (FLEX_SIG), not at the connector.\n- F2 near J1 pin A4."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6445a17b-9e96-490e-85d1-8c1a25673cfa")
+	)
 	(wire
 		(pts
 			(xy 63.5 72.39) (xy 63.5 69.85)
@@ -1168,11 +1180,6 @@
 			)
 		)
 	)
-  (text "PCB PLACEMENT NOTES:\n- C14 (1nF) and D7 right at U1 GPIO pin (FLEX_SIG), not at the connector.\n- F2 near J1 pin A4."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "6445a17b-9e96-490e-85d1-8c1a25673cfa")
-  )
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 63.5 76.2 0)
@@ -1248,6 +1255,28 @@
 				)
 			)
 		)
+		(property "MPN" "SMD1812B020TF-J"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "URL" "https://jlcpcb.com/partdetail/SMD1812B020TF-J/C269125"
+			(at 63.5 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "21407e7d-ac76-4543-8ff2-fa2e81e3919b")
 		)
@@ -1262,25 +1291,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "SMD1812B020TF-J"
-			(at 63.5 76.2 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "URL" "https://jlcpcb.com/partdetail/SMD1812B020TF-J/C269125"
-			(at 63.5 76.2 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 127 114.3 90)

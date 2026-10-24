@@ -1322,6 +1322,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCB PLACEMENT NOTES:\n- U9 (ESD) right at J2, before D+/D- reach U1.\n- Route USB_DP/USB_DM as a short tight pair.\n- Optional: 1-4.7uF cap on VBUS near J2 (none on schematic now)."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "30a75d03-e301-469c-932b-8260b4283269")
+	)
 	(text "USB-C: bench flashing / serial via ESP32-C3 native USB-Serial/JTAG (GPIO18/19).\n5.1k CC pull-downs = UFP (sink). U9 USBLC6 ESD on D+/D- and VBUS. VBUS diode-ORs into +5V on the Supplies page."
 		(exclude_from_sim no)
 		(at 25.4 30.48 0)
@@ -1902,11 +1914,6 @@
 			)
 		)
 	)
-  (text "PCB PLACEMENT NOTES:\n- U9 (ESD) right at J2, before D+/D- reach U1.\n- Route USB_DP/USB_DM as a short tight pair.\n- Optional: 1-4.7uF cap on VBUS near J2 (none on schematic now)."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "30a75d03-e301-469c-932b-8260b4283269")
-  )
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 165.1 96.52 0)

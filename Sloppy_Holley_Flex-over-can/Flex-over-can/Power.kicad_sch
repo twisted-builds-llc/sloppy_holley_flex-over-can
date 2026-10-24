@@ -1272,6 +1272,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCB PLACEMENT NOTES:\n- RV1, C1, C2: right at J1 pin A1, before D1. Short, wide trace to GND.\n- C3 (0.1uF) next to U2 OUT pin; C4 (47uF) and D2 near U2 OUT.\n- U2 IN: keep D1 close to U2 IN pin.\n- U2 tab: large copper pour + thermal vias to bottom GND (~2W)."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca94224e-8ecd-43cc-9916-496dbfa3edd5")
+	)
 	(text "VOLTAGE\nREGULATOR"
 		(exclude_from_sim no)
 		(at 134.62 83.82 0)
@@ -1300,12 +1312,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54df8b61-7e6a-465a-b503-579cdec55d45")
-	)
-	(junction
-		(at 179.07 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b86d1ba-5cde-42f2-8f1d-bd0b9f891cb8")
 	)
 	(junction
 		(at 153.67 102.87)
@@ -1657,11 +1663,6 @@
 		)
 		(uuid "f7d7c87f-af29-495f-a3b1-4120073b649b")
 	)
-  (text "PCB PLACEMENT NOTES:\n- RV1, C1, C2: right at J1 pin A1, before D1. Short, wide trace to GND.\n- C3 (0.1uF) next to U2 OUT pin; C4 (47uF) and D2 near U2 OUT.\n- U2 IN: keep D1 close to U2 IN pin.\n- U2 tab: large copper pour + thermal vias to bottom GND (~2W)."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "ca94224e-8ecd-43cc-9916-496dbfa3edd5")
-  )
 	(symbol
 		(lib_id "Regulator_Linear:L7805")
 		(at 139.7 95.25 0)

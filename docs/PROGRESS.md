@@ -36,7 +36,7 @@
 - [x] Connector part chosen and footprint verified
 - [x] Layout, power-ground routing for 2 output ground pins, quiet sensor ground
 - [x] DRC: 0 unconnected; remaining items footprint-owned or cosmetic (see HARDWARE.md)
-- [ ] R38-R41: tick "Do not populate" in each symbol's properties (they only have a `DNP` text field, so BOM/CPL exports still include them), then Update PCB from Schematic
+- [x] R38-R41 set to "Do not populate" in the schematic and synced to the PCB
 - [ ] Decide on U2 thermal vias and output trace width / copper weight before ordering
 - [ ] JLC fab outputs (gerbers, BOM, CPL) and order
 

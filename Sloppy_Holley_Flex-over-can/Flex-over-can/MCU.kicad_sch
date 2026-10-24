@@ -1754,6 +1754,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PCB PLACEMENT NOTES:\n- C10 (100nF) at U1 pin 3 (3V3), smallest loop to GND pad.\n- C9 (10uF) next to C10, same 3V3 pin.\n- C11 (1uF) at U1 pin 8 (EN).\n- Keep-out: no copper or parts under/near U1 antenna end."
+		(exclude_from_sim no)
+		(at 15.24 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e214657-e5d6-4e91-924e-cc0a5fe0f3ad")
+	)
 	(text "MCU: ESP32-C3-MINI-1-N4. EN RC (R4/C11) for clean reset. GPIO9 = BOOT (SW1 to GND, R5 pull-up).\nStrap pins GPIO2 (status LED, R6 pull-up) and GPIO8 (SDA, R8 I2C pull-up) idle high at boot. GPIO20 spare.\nGPIO21 (U0TXD) drives CAN_S: idles high through boot = transceiver silent."
 		(exclude_from_sim no)
 		(at 25.4 30.48 0)
@@ -2886,11 +2898,6 @@
 			)
 		)
 	)
-  (text "PCB PLACEMENT NOTES:\n- C10 (100nF) at U1 pin 3 (3V3), smallest loop to GND pad.\n- C9 (10uF) next to C10, same 3V3 pin.\n- C11 (1uF) at U1 pin 8 (EN).\n- Keep-out: no copper or parts under/near U1 antenna end."
-    (at 15.24 180.34 0)
-    (effects (font (size 1.27 1.27) (color 0 0 194 1)) (justify left bottom))
-    (uuid "2e214657-e5d6-4e91-924e-cc0a5fe0f3ad")
-  )
 	(symbol
 		(lib_id "Device:R")
 		(at 170.18 111.76 0)
