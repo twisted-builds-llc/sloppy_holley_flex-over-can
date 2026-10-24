@@ -11,3 +11,4 @@ firmware/.vscode/ipch
 fp-info-cache
 _autosave-*
 \#auto_saved_files#
+.history/
