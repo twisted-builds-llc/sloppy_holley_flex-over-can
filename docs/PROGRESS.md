@@ -28,14 +28,17 @@
 - [x] JLC/LCSC part selection (LCSC field on every part except J1; table in HARDWARE.md)
 - [x] ERC clean (0 errors, 0 warnings), no unconnected pins, no overlaps
 - [x] Split into hierarchy: Power sheet (placeholder for user's own protection + 5V circuit) and Connector sheet (24 NC-flagged stubs)
-- [ ] Draw power circuit on Power sheet
-- [ ] Place harness connector on Connector sheet (delete NC flags, wire pins)
+- [x] Draw power circuit on Power sheet (TVS, B160 reverse diode, L7805)
+- [x] Place harness connector on Connector sheet (J1 HCCPHPE24BKA90F)
 - [ ] Peer review of schematic with partner
 
 ### Phase 3 — PCB
-- [ ] Connector part chosen and footprint verified
-- [ ] Layout, power-ground routing for 2 output ground pins, quiet sensor ground
-- [ ] DRC clean, JLC fab outputs (gerbers, BOM, CPL)
+- [x] Connector part chosen and footprint verified
+- [x] Layout, power-ground routing for 2 output ground pins, quiet sensor ground
+- [x] DRC: 0 unconnected; remaining items footprint-owned or cosmetic (see HARDWARE.md)
+- [ ] R38-R41: tick "Do not populate" in each symbol's properties (they only have a `DNP` text field, so BOM/CPL exports still include them), then Update PCB from Schematic
+- [ ] Decide on U2 thermal vias and output trace width / copper weight before ordering
+- [ ] JLC fab outputs (gerbers, BOM, CPL) and order
 
 ### Phase 4 — Bring-up and validation
 - [ ] Power-up and current check, flash over USB-C
@@ -51,7 +54,7 @@ Wiring follows `firmware/src/pins.h`: CAN TX 4, RX 5, CAN Pal SLNT 21, flex 3 (4
 ## Open questions
 - Flash use is 83% of the default 1.3 MB app slot (WiFi stack). If OTA updates aren't wanted, a single-app partition table doubles the room. Decide before adding OTA.
 - Output arming policy: Ver12 armed outputs only after all four rows had been OFF for 500 ms, and a CAN fault needed a manual re-ARM. The new firmware follows fresh Holley commands directly, so a fan or pump comes back on its own after a reset or CAN glitch. It keeps a 2 s boot guard and a serial DISARM latch. Confirm with partner.
-- Connector part number and per-pin current rating (sets the max current per output).
+- J1 HCCPHPE24BKA90F per-pin current rating (sets the max current per output; 2 power GND pins carry all output return current).
 - Identity of the "genuine device 1985" the bench work started from. Does Holley cap its input count?
 - Highest PWM frequency the intended loads need (affects the output switch choice).
 
@@ -61,3 +64,4 @@ Wiring follows `firmware/src/pins.h`: CAN TX 4, RX 5, CAN Pal SLNT 21, flex 3 (4
 - 2026-10-19 — Web panel (web.h) + NVS settings (settings.h). Per-board random WiFi password replaces the hardcoded Ver12 one. Build clean, page JS syntax-checked, not yet run on hardware.
 - 2026-10-19 — Schematic V001: ESP32-C3-MINI-1, LMR16006 buck, ME6211, TPS7B69 sensor 5 V, 4× BTS3256D, TJA1051T/3, ADS1115, USB-C. ERC clean. J1 footprint pending.
 - 2026-10-19 — Schematic split into Root + Power + Connector sheets. Removed F1/D1/D2/LMR16006 buck and J1; Power sheet exposes VBAT_IN/GND in and VBAT/+5V out. ERC: 5 expected label_dangling errors until the placeholders are filled.
+- 2026-10-24 — Pre-order review: ERC 0 errors, DRC 0 unconnected, netlist matches `pins.h`, firmware builds and native tests pass. Open before order: R38-R41 real DNP attribute (text field only today), U2 thermal vias, output current capacity (about 3 A per output on 1.0 mm / 1 oz). Docs updated to the drawn power circuit and J1 cavity names.

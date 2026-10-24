@@ -205,6 +205,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/bfa65e90-a9d9-4936-a77c-f09abfa027e0")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5" "6" "7" "8" "3" "2" "10" "9" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -627,6 +633,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/81d33b60-329b-4cd6-9081-3f3eb813a11c")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -792,6 +804,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/f33e0fc2-04c1-47fe-8c0c-b5625e9c1bd3")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -957,6 +975,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/c5714d7f-9ea5-4486-add7-5058ddf813e8")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1101,6 +1125,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/61948f0f-9348-4d1e-bf9f-ee8e033c7690")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
 		(attr allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -1392,6 +1422,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/95d5ddcf-d284-445f-b346-439d58a59ccc")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1794,6 +1830,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/ad8c4266-bb41-4ec9-96a2-e1062ec84435")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2008,6 +2050,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/94fb9208-9c4b-467d-9f65-40f9c67854b8")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "5" "8" "3" "2" "7" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2397,6 +2445,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/a82508dc-e4bf-4651-a51c-b978be296d30")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2562,6 +2616,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/2bfc4a76-34af-4b46-9ea3-648263f83571")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2740,6 +2800,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/bcd21bda-9297-4aed-b039-55bb24d782cf")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2905,6 +2971,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/d359c609-cd40-472c-80b7-740e6c72adb4")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3069,6 +3141,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/b4a32bdc-56a1-4997-a2bc-3b1af07b08a3")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "4" "1" "5" "3" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3508,6 +3586,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/71630a43-d292-4642-9c9c-63dd15a5bcd4")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4016,6 +4100,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/4dc3d51a-2c8e-4b78-b2b6-da29c836d81b")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4181,6 +4271,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/d065c3d7-858b-4c11-ad25-efd7f241c2fb")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4346,6 +4442,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/d45a4232-8e61-4b30-9c17-e19744945d0f")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4511,6 +4613,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/4eb872fd-6cf0-4d26-b44c-9fd72bd1ce7a")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4676,6 +4784,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/9eab4c8d-0fcb-40f3-b935-0302baaee3bc")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4841,6 +4955,12 @@
 		(path "/9b82dd58-b254-43d9-bea1-a5a8511d2977/f8229fbd-5bef-44e7-8659-b02f76cd864a")
 		(sheetname "/Flex Sensor Input/")
 		(sheetfile "Flex.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5114,6 +5234,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/38e70ff3-5572-4ece-9d4f-0a2ee300f73b")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5279,6 +5405,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/2f59ecf1-8ccf-43d3-b040-0caeeb67f8f0")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5457,6 +5589,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/03ab1d5d-b819-44ab-afa0-c4f8fc524ed3")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5785,6 +5923,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/92c0dd9a-b36b-47b5-997b-c86a7ab4c685")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5950,6 +6094,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/84eb73cb-f345-4a72-88bb-8e97f9d48051")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6114,6 +6264,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/c21c7e4c-918c-4f86-9936-bb16440ac4bb")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "4" "1" "5" "3" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6562,6 +6718,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/1fc06db6-3140-44fd-b2c7-b10d583746e9")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6951,6 +7113,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/7eae318f-492f-41b3-8dbc-eb52177d6398")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7116,6 +7284,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/d415990e-a01f-4ec2-9328-3ec1b2f79a8f")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7286,6 +7460,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/b9886731-1a4a-4e16-8e55-3377451170e8")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8299,6 +8479,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/6bb77b7c-cedd-4695-831a-02818ffed7f8")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8464,6 +8650,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/a5eb2228-cf5e-4fe2-806a-8c8aab62f69e")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8866,6 +9058,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/ed787c93-c5b7-4cc1-912b-e85380299520")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9031,6 +9229,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/0685cffb-473a-46a0-a720-276c32cf21cb")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9196,6 +9400,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/02bb0565-98c0-4aac-9d48-a448004b0293")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9361,6 +9571,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/1c3ad195-47ad-4716-b5d9-f128c7436540")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9526,6 +9742,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/e8a876dd-30b8-483c-a9a8-07657b4d9a6b")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9691,6 +9913,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/2c6498d7-52c5-4fc5-a0e9-e4329ee38801")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9856,6 +10084,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/c4d84512-7902-4500-8463-568143165486")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10021,6 +10255,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/d25ab602-3160-4c93-b45b-b906a1c544ef")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10186,6 +10426,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/0e0cce98-b8ec-4e44-aab4-520a9aaaaf41")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10351,6 +10597,12 @@
 		(path "/9b82dd58-b254-43d9-bea1-a5a8511d2977/55177494-829d-495a-bb77-ce068df63468")
 		(sheetname "/Flex Sensor Input/")
 		(sheetfile "Flex.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10516,6 +10768,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/ab81b67a-f72a-40d2-b2a9-15056cece683")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11139,6 +11397,12 @@
 		(path "/9b82dd58-b254-43d9-bea1-a5a8511d2977/91e72e5c-e435-4af8-95c0-ab8eb3c2a482")
 		(sheetname "/Flex Sensor Input/")
 		(sheetfile "Flex.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11528,6 +11792,12 @@
 		(path "/9f2b7071-401e-4f00-b35d-7482c7d405ec/612131fe-331b-4fb8-9fc2-b5b41c1649b8")
 		(sheetname "/USB-C/")
 		(sheetfile "USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11692,6 +11962,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/a9b696ae-ec3b-4ecc-a5f1-0670a8da19dc")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "4" "1" "5" "3" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12140,6 +12416,12 @@
 		(path "/9f2b7071-401e-4f00-b35d-7482c7d405ec/db70c8b5-8ab1-443b-8372-915744093dd1")
 		(sheetname "/USB-C/")
 		(sheetfile "USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12297,6 +12579,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/88106c55-0832-4549-8552-7b057ee82e9f")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12602,6 +12890,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/da46962e-9b17-4b4b-901c-ef1c0c47efb4")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12991,6 +13285,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/bc780600-b5bb-4d0d-bc31-4e93de10e6f1")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13156,6 +13456,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/7fa3de63-24db-494c-b7cd-b10101d35e65")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13321,6 +13627,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/4e476fc4-4e72-4d54-9c30-1fa168500cf6")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13486,6 +13798,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/47aa7c6b-4907-4fc2-99b8-60c9301e9515")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13651,6 +13969,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/5c1177bb-8654-4ee1-9d80-198b78a803c2")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14930,6 +15254,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/426c33b0-95f5-4a7e-880d-185f8e7b1df8")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr allow_missing_courtyard)
 		(net_tie_pad_groups "1, 2")
 		(duplicate_pad_numbers_are_jumpers no)
@@ -15044,6 +15374,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/56070297-9fd4-4241-a129-8dcee4246df4")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15208,6 +15544,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/98bba60a-85fc-4ced-9a6a-42f2dfdcd231")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "4" "1" "5" "3" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15764,6 +16106,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/60d7a828-9400-4f30-9772-a32b3d606fbe")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15929,6 +16277,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/e3367864-c251-410c-a46f-7cdb64d2a7c5")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16107,6 +16461,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/a6ae5e6c-6aa8-4e37-8106-9d0dc6e91801")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16272,6 +16632,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/ea8d9790-69e7-4d65-85a6-b34265b2040b")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16424,6 +16790,16 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/970947e9-510e-49c3-81a5-804013f764cc")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "8" "12" "13" "4" "7" "9" "10" "15" "17" "24" "25" "28" "29" "32"
+					"33" "34" "35" "3" "38" "37" "39" "40" "41" "46" "42" "43" "44" "45"
+					"2" "47" "48" "49" "50" "51" "52" "53" "36" "1" "11" "14" "31" "30"
+					"27" "26" "5" "6" "18" "19" "20" "21" "22" "23" "16"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17363,6 +17739,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/e57de138-6038-4981-9d91-d07ec43f76f8")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17519,6 +17901,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/1684430e-cb84-4bb5-8215-f25a4a2a4895")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17832,6 +18220,12 @@
 		(path "/9b82dd58-b254-43d9-bea1-a5a8511d2977/16326312-292e-4536-95ab-92b82b806d1c")
 		(sheetname "/Flex Sensor Input/")
 		(sheetfile "Flex.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18010,6 +18404,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/044ca041-e845-479f-bb08-fc4853126aa0")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18175,6 +18575,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/bde2956d-62fa-4178-a708-3ceddfbba9f9")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18340,6 +18746,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/7d26588b-f98d-4698-bd0e-c5fb47d88e9e")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18505,6 +18917,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/c74f0057-b300-40c8-920f-66c4552aa582")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18894,6 +19312,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/86f7e4fe-6562-4630-88cb-ed966968f90e")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19072,6 +19496,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/fd6be6aa-3ca9-497b-b172-2af27388b496")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19242,6 +19672,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/c5a03d66-e716-4836-8eef-4b557a06b179")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19537,6 +19973,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/32a40155-29e3-4ff0-a8a6-a7195e1e25d7")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19702,6 +20144,12 @@
 		(path "/fc029ae0-e43b-4993-a5e5-66b0c2468c88/38a13ff1-3848-4fda-8a87-a67c767aabc5")
 		(sheetname "/CAN Bus/")
 		(sheetfile "CAN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19872,6 +20320,12 @@
 		(path "/a0c516e1-c011-4b6e-a82e-48eb07b9770c/9cc8c2a4-6618-43ce-a8b7-6752b439c534")
 		(sheetname "/Power/")
 		(sheetfile "Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20167,6 +20621,12 @@
 		(path "/fda39084-1e7c-4513-9a0f-48f946786993/be723668-1112-49e5-a8ef-caa6aa0f8a8b")
 		(sheetname "/MCU ESP32-C3/")
 		(sheetfile "MCU.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20396,6 +20856,12 @@
 		(path "/16b92181-d8c4-48d4-b0c3-a76b149fd6be/db759943-69bc-4e07-890e-79e344619fa7")
 		(sheetname "/Low-Side Outputs/")
 		(sheetfile "Outputs.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20561,6 +21027,12 @@
 		(path "/9f2b7071-401e-4f00-b35d-7482c7d405ec/23b145da-6d15-4ee9-8fb8-c60ad5f92996")
 		(sheetname "/USB-C/")
 		(sheetfile "USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "2" "6" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20930,6 +21402,12 @@
 		(path "/9b82dd58-b254-43d9-bea1-a5a8511d2977/96e5c902-9570-46e7-bf2c-bc1b738929b5")
 		(sheetname "/Flex Sensor Input/")
 		(sheetfile "Flex.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21095,6 +21573,12 @@
 		(path "/569c65bb-983c-44bb-a074-b0d194a80a78/fbe2fd45-f2a3-478c-9c03-0d793824b50e")
 		(sheetname "/3V3 and Sensor 5V/")
 		(sheetfile "Supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21504,6 +21988,12 @@
 		(path "/62c9dd6f-489d-459c-8ee1-2cbea9b7e53f/388d9584-68bb-4e86-a484-c6c43d355ed9")
 		(sheetname "/Analog Inputs/")
 		(sheetfile "Analog.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line

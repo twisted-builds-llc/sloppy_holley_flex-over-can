@@ -10,24 +10,22 @@ CAN bus input/output module for Holley Terminator X (also HP/Dominator class ECU
 > Status: early development. See [docs/PROGRESS.md](docs/PROGRESS.md).
 > Never use for engine control until the bench and engine-off validations in PROGRESS.md are complete.
 
-## Connector (24 pin)
+## Connector (J1, HCCPHPE24BKA90F, 24 pin)
 
-| Pin | Function | Pin | Function |
-|----:|----------|----:|----------|
-| 1 | +12 V in | 13 | Analog 1 signal |
-| 2 | Power GND | 14 | Sensor GND |
-| 3 | CAN H | 15 | +5 V sensor |
-| 4 | CAN L | 16 | Analog 2 signal |
-| 5 | Flex sensor +12 V out | 17 | Sensor GND |
-| 6 | Flex sensor signal | 18 | +5 V sensor |
-| 7 | Flex sensor GND | 19 | Analog 3 signal |
-| 8 | Output 1 (low side) | 20 | Sensor GND |
-| 9 | Output 2 (low side) | 21 | +5 V sensor |
-| 10 | Output 3 (low side) | 22 | Analog 4 signal |
-| 11 | Output 4 (low side) | 23 | Sensor GND |
-| 12 | +5 V sensor | 24 | Power GND |
+Cavity names are the J1 footprint pad names (rows A, B, C). Use them when building the harness.
 
-Output load current returns through pins 2 and 24. Sensor grounds are a separate quiet ground.
+| Cavity | Function | Cavity | Function | Cavity | Function |
+|-------:|----------|-------:|----------|-------:|----------|
+| A1 | +12 V in | B1 | Power GND | C1 | Output 3 (low side) |
+| A2 | CAN H | B2 | +5 V sensor | C2 | +5 V sensor |
+| A3 | CAN L | B3 | Analog 1 signal | C3 | Analog 3 signal |
+| A4 | Flex sensor +12 V out | B4 | Sensor GND | C4 | Sensor GND |
+| A5 | Flex sensor signal | B5 | +5 V sensor | C5 | +5 V sensor |
+| A6 | Flex sensor GND | B6 | Analog 2 signal | C6 | Analog 4 signal |
+| A7 | Power GND | B7 | Sensor GND | C7 | Sensor GND |
+| A8 | Output 1 (low side) | B8 | Output 2 (low side) | C8 | Output 4 (low side) |
+
+Output load current returns through A7 and B1. Sensor grounds (A6, B4, B7, C4, C7) are a separate quiet ground joined to power GND at one point on the board.
 
 ## Web panel
 
