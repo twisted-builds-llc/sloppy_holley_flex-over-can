@@ -632,7 +632,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "Flex-over-canDSN.dsn",
-      "step": "",
+      "step": "Flex-over-can_3D_file.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
