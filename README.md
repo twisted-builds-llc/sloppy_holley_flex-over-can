@@ -4,7 +4,7 @@ CAN bus input/output module for Holley Terminator X (also HP/Dominator class ECU
 
 - **To Holley:** GM/Continental flex-fuel sensor (ethanol % + fuel temp) and four 0-5 V analog inputs, sent as CAN device 1985.
 - **From Holley:** four low-side (ground-switching) outputs, each on/off or PWM, following Holley I/O output rows.
-- ESP32-C3-MINI-1, WiFi AP web panel for status/config/test, USB-C for flashing.
+- ESP32-C3-WROOM-02, WiFi AP web panel for status/config/test, USB-C for flashing.
 - Built for JLCPCB assembly.
 
 > Status: early development. See [docs/PROGRESS.md](docs/PROGRESS.md).

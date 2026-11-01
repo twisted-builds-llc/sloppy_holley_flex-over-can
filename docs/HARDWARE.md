@@ -24,7 +24,7 @@ ERC: 0 errors, 1 warning (RV1 uses the `Device:Varistor_US` symbol, which differ
 
 ```
 +12V (J1 A1) VBAT_IN -> TVS -> B160 reverse diode -> VBAT (protected 12V) -> L7805 -> +5V
-+5V -> LDO 3.3V -> ESP32-C3-MINI-1, ADS1115, CAN xcvr
++5V -> LDO 3.3V -> ESP32-C3-WROOM-02, ADS1115, CAN xcvr
 VBAT -> protected sensor 5V -> B2/B5/C2/C5
      -> polyfuse -> flex +12V (A4)
 USB-C VBUS -> diode-OR into 5V (bench flashing without 12V)
@@ -35,7 +35,7 @@ CAN H/L (A2/A3) -> ESD -> transceiver (3.3V I/O, silent pin) -> GPIO4/5, jumper 
 GPIO0/1/7/10 -> BTS3256D low-side switches -> A8/B8/C1/C8; active clamp; return via A7 + B1
 ```
 
-## GPIO map (ESP32-C3-MINI-1) — draft
+## GPIO map (ESP32-C3-WROOM-02)
 
 | GPIO | Use | Notes |
 |-----:|-----|-------|
@@ -64,7 +64,7 @@ The dev-board bench build (SuperMini) uses the same numbers where its pins allow
 | D1 | B160-13-F reverse-polarity diode | C24784 | 1 A; carries VBAT loads only, not output load current |
 | RV1 | SMDJ24CA TVS | C215903 | 24 V standoff, 38.9 V clamp at 77 A |
 | D2 | 1SMB5919BT3G 5.6 V zener | C70260 | +5V overvoltage clamp |
-| U1 | ESP32-C3-MINI-1-N4 | C2838502 | Espressif KiCad lib 3.2.1 vendored in `Kicad-specific-libraries/` |
+| U1 | ESP32-C3-WROOM-02-N4 | C2934560 | 4 MB flash. Stock KiCad `RF_Module:ESP32-C3-WROOM-02` symbol and footprint (replaced the MINI-1 in commit f3b6eb6) |
 | U11 | ME6211C33M5G-N LDO 3.3 V 0.5 A | C82942 | AP2112K symbol (same pinout) |
 | U3 | TPS7B6950QDCYRQ1 sensor 5 V, 150 mA | C108469 | 40 V in, current limit + thermal shutdown |
 | U4-U7 | BTS3256D HITFET low-side | C3232337 | 7.5 A nom, 10 mΩ, 3.3 V input, 12 kHz max PWM, 40 V active clamp, fault readback on IN |
@@ -74,7 +74,7 @@ The dev-board bench build (SuperMini) uses the same numbers where its pins allow
 | D6 | NUP2105L CAN ESD | C284104 | |
 | F2 | 0.2 A PTC | C69680 | flex sensor 12 V |
 | J1 | HCCPHPE24BKA90F 24-pin | none | through-hole, no LCSC number: hand-solder or add for JLC THT assembly |
-| J2 | USB-C HRO TYPE-C-31-M-12 | C165948 | |
+| J2 | USB-C HRO TYPE-C-31-M-12 | C165948 | In a 16 × 3.2 mm notch on the bottom edge; receptacle face 1.15 mm past the notch floor |
 | R38-R41 | 15k SRP (slew) | C22809 | DNP: open = fastest slew for PWM |
 
 Passives are JLC Basic 0603 parts unless noted. Analog divider 12k/20k gives ×0.625, so firmware `ANALOG_SCALE` = 1.6 on this board.
@@ -88,7 +88,9 @@ Passives are JLC Basic 0603 parts unless noted. Analog divider 12k/20k gives ×0
 - CAN termination: JP1 ships open (no 120 Ω). Bridge it only if the harness is not already terminated.
 - Sensor 5 V shorted to 12 V can damage U3 (OUT abs max). Consider adding a TVS/series protection if the harness risk is real.
 - PCB V001: 98 × 79.5 mm, 2 layers, 1.6 mm, 1 oz. GND pour both sides; copper keep-out under the U1 antenna at the board edge. Routed with Freerouting (DSN/SES files are working files, not tracked).
-- DRC: 0 unconnected. Remaining items are footprint-owned or cosmetic: J1 courtyard not closed (2 errors), J1 silk past board edge, C4 reference over U2 silk, U1/U3 differ from library copies, HOLE1/HOLE2 board-only.
+- DRC (2026-11-01, KiCad 10.0.8, zones refilled, schematic parity on): 0 unconnected, 0 net mismatches. Remaining items are footprint-owned or cosmetic: J1 courtyard not closed (2 errors), J1 and J2 silk past board edge, C4 reference over U2 silk, U1/U3 differ from library copies, HOLE1/HOLE2 board-only, J1 exclude-from-BOM differs between symbol and footprint.
+- USB-C (J2) moved to a bottom-edge notch for programming access (commit 01866d8). Production Gerbers re-checked against the board: copper, mask, paste and outline geometry identical; the PTH drill file has the 4 J2 shield slots.
+- JLC BOM: JP1 (solder jumper) and NT1 (net tie) are copper-only and have no LCSC number. Mark them "do not place" at the JLC BOM step.
 
 ## Bring-up checklist
 _Fill in during Phase 4._
