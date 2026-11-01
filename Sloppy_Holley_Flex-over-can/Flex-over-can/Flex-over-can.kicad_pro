@@ -631,7 +631,7 @@
       "idf": "",
       "netlist": "",
       "plot": "",
-      "specctra_dsn": "Flex-over-canDSN.dsn",
+      "specctra_dsn": "Flex-over-canDSN2.dsn",
       "step": "Flex-over-can_3D_file.step",
       "vrml": ""
     },
